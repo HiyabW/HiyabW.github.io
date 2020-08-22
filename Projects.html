@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Cuprum:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/3602b22ed8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="font-awesome-animation.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>About_Me</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md py-0 fixed-top">
+        <a href="Home_Page.html" class="navbar-brand">HeyabW</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="About_Me.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Work_Experience.html" class="nav-link">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Projects.html" class="nav-link">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!--TITLE-->
+    <div class="px-5 pt-3 mt-5 title text-center">
+      <h1>Projects</h1>
+      <br>
+      <br>
+      <p>Here are a few projects I have been working on. Clicking on the "View Github" button will redirect you to the github repository for its corresponding project, where you will find a ReadMe file explaining the details of the project as well as its code. 
+      </p>
+  </div>
+
+  <!--SLIDESHOW-->
+    <div id="carouselExampleIndicators" class="px-5 mx-5 pt-3 my-5 carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="imgs/p1.png" alt="First slide" id="img">
+          <div class="carousel-caption d-none d-md-block">
+            <h4><b>Mechanic Shop SQL</b></h4>
+            <p class="text-white"><b>Usage of SQL and JAVA to construct Queries and modify data in a database. Exemplifies extensive knowledge of backend material.</b></p>
+            <button><a href=#>View Github</a></button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="imgs/experience1.jpg" alt="Second slide" id="img">
+          <div class="carousel-caption d-none d-md-block">
+            <h4><b>Command Shell C++</b></h4>
+            <p class="text-white"><b>Designed and implemented from scratch a fully functional terminal using composite pattern in C++, working with a team through agile practices.</b></p>
+            <button><a href="https://github.com/HiyabW/CShell">View Github</a></button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="imgs/girl.png" alt="Third slide" id="img">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+</html>

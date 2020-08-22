@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Cuprum:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Work_Experience</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md py-0 fixed-top">
+        <a href="Home_Page.html" class="navbar-brand">HeyabW</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="About_Me.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Work_Experience.html" class="nav-link">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Projects.html" class="nav-link">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="px-0 mx-0 pt-5"> 
+    
+    <!--TITLE-->    
+        <div class="px-5 mt-4 text-center title">
+            <h1 class="title">Work<br>Experience</h1>
+            <br>
+            <br>
+            <p class="px-5">Listed below are the various people and places I’ve worked for. These entries include information about the people I’ve worked for as well as the designated roles or tasks I had during my time there</p>
+        </div>
+        <br>
+        <br>
+    <!--THINQ TV-->
+        <div class="px-5 text-white text-left row">
+            <div class="px-0 col-lg-4 col-md-12">
+                <img class="img-fluid" src="imgs/experience1.jpg" id="img">
+            </div>
+            <div id="lightb" class="subheader py-4 px-4 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <h1>Front-End Development Intern at ThinqTv</h1>
+                <br>
+                <p class="text-white">As of late July of 2020, I began my journey working as an intern for Thinq TV, a web application dedicated to promoting important conversations about the struggles of women and minorities in modern society. I was primarily responsible for either constructing from scratch or redesigning their wepbages, which required an extensive knowledge of HTML, CSS, JavaScript, and Ruby on Rails. I often work with a partner, which required effective collaboration and communication in order to get work done efficiently.<br>Working at ThinqTv has taught me to be self sufficient and figure out problems I would run into on my own rather than always seeking for help (though if it is necessary, I have no problem reaching out to my coworkers). I have also learned how important it is to me to work somewhere that makes me genuinely feel like I'm making a positive impact on society. Occasionally, I would participate in UI/UX or backend tasks, which familiarized me with softwares like Figma and systems such as Postgres.</p>
+                <br>
+                <button><a href="#">Read More</a></button>
+            </div>
+        </div>
+    <br>
+    <br>
+    <!--RESEARCH-->
+    <div class="px-5 text-white text-left row">
+        <div id="medb" class="subheader py-4 px-4 col-lg-8 col-md-12 col-sm-12 col-xs-12 order-lg-1 order-sm-2">
+            <h1>Researcher For Artificial Intelligence</h1>
+            <br>
+            <p class="text-white">I started doing research for professor Vagelis Papalexis in the summer of 2020. I have since been paired with a graduate student, and we have been working on a program that gathers covid-related news and deems whether the information is fake or correct. I have been learning about data collection and implementing various functions used in the process.</p>
+            <br>
+            <button><a href="#">Read More</a></button>
+        </div>
+        <div class="px-0 col-lg-4 col-md-12 order-lg-2 order-sm-1">
+            <img class="img-fluid" src="imgs/experience2.png" id="img">
+        </div>
+    </div>
+    <br>    
+    <br>
+
+    </section>
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+</html>
