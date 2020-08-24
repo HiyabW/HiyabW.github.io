@@ -10,12 +10,17 @@ div {
 .title h1 {
     font-family: 'Bungee Inline', cursive;
     font-size: 80px;
-    
-    
-
     border-bottom: 1px solid #000;
     display: inline-block;
     padding-bottom: 10px;
+}
+
+i {
+  transition-duration: 0.3s;
+}
+
+.star:hover {
+  color: #F2C725;
 }
 
 .title2 h1 {
@@ -28,13 +33,13 @@ div {
     padding-bottom: 10px;
 }
 
-button{
-    background-color: #3D2A20;
-    border-color: #3D2A20;
-    color: white;
-    border-radius: 5px; 
-    size: 15px;
-    font-weight: 600;
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 .subheader h1{
     font-weight: 900;
@@ -48,23 +53,31 @@ button{
 }
 
 p {
-    color: black;
     font-weight: lighter;
     font-size: 1.125rem;
 }
 
 a {
-    color: white;
+    color: black;
+    transition-property: color;
+    transition-duration: 0.1s;
 }
+
+.white {
+  color: white;
+  transition-property: color;
+  transition-duration: 0.1s;
+}
+
 a:hover {
-    color:white;
+    color:#78AB46;
     text-decoration: none;
 }
 
 #img {
     min-width: 100%;
     width:  400px;
-    height: 500px;
+    height: 400px;
     border-radius: 10px;
 }
 
@@ -74,6 +87,10 @@ a:hover {
 
 #medb {
     background-color: #694a36;
+}
+
+#darkb {
+  background-color: #3D2A20;
 }
 
 .content {
