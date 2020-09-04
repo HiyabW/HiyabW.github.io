@@ -64,7 +64,7 @@ a {
 }
 
 a:hover {
-    color:#78AB46;
+    color:	#009900;
     text-decoration: none;
 }
 
@@ -102,7 +102,7 @@ a:hover {
 }
 
 #mainNavbar .nav-link:hover {
-    background-color: #3D2A20;
+    background-color: #009900;
     border-radius: 5px;
     color:white;
 }
