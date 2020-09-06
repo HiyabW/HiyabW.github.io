@@ -249,7 +249,7 @@ img {vertical-align: middle;}
 }
 /*_____________________________   PARALLAX CSS    ____________________________________*/
 .paral {
-    min-height: 600px;
+    min-height: 1000px;
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
